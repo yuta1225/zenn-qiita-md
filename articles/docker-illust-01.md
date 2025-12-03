@@ -3,7 +3,7 @@ title: "【初心者向け】イラストでわかるDockerとKubernetes - 第1�
 emoji: "📦"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["Docker", "Kubernetes", "devops", "dockercompose", "SRE"]
-published: true
+published: false
 ---
 
 # はじめに
