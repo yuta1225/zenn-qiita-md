@@ -1,17 +1,16 @@
 ---
 title: Terraformさん「最小キャパシティを希望キャパシティより大きくしろ」ワイ「してるんだが？」
-tags:
-  - AWS
-  - devops
-  - kubernetes
-  - Terraform
-  - SRE
 private: false
+tags:
+  - Kubernetes
+  - devops
+  - SRE
+  - AWS
+  - Terraform
 updated_at: '2026-01-05T17:27:28+09:00'
 id: e997e1e3ff966d23fa3a
 organization_url_name: null
 slide: false
-ignorePublish: false
 ---
 # はじめに
 新人2年目SREエンジニアのデバッグ備忘録
@@ -58,10 +57,11 @@ max_size               = 3
 どうしよう。gemini助けて
 
 ## EKSノードグループの基本設定を更新すればいいっぽい
-どうやら、Terraformはスケジュールを適用する前に現在の希望キャパシティの状態（夜間停止中の希望キャパシティ0）で定義通りに作ろうとするらしい。
+どうやら、Terraformは現在の希望キャパシティの状態（夜間停止中の希望キャパシティ0）で定義通りに作ろうとするらしい。
 つまり、Terraformが希望キャパシティはコード通りでない0（2を適用しようとしているけど）のままで作ろうとしていて、最小最大キャパシティはコード通りで作ろうとするらしい。
+分かりづらいが、オートスケーリングスケジュールは関係なく、その前段のmanaged_node_groupだけ修正すればいい。
 :::note
-もしオートスケールで台数を増やしている状況に対して希望キャパシティが干渉してしまうとマズいという理屈らしい。つまり、Terraformの問題。というより正しい仕様って感じ。Terraformが私の酷いapplyを制御してくれていたみたい。
+もしオートスケールで台数を増やしているなら、その状況に対して希望キャパシティが干渉してしまうとマズいという理屈らしい。つまり、Terraformの問題。というより正しい仕様って感じ。Terraformが私の酷いapplyを制御してくれていたみたい。
 :::
 module eksの以下が影響していて、terraformが希望キャパシティに関して干渉できないみたい 
 https://github.com/search?q=repo%3Aterraform-aws-modules%2Fterraform-aws-eks%20%20ignore_changes&type=code
@@ -84,7 +84,8 @@ max_size               = 0
 ```tf
   eks_managed_node_groups = {
     welcome_study_nodes = {
-      desired_size = 2
+        min_size = 1
+        desired_size = 2
 ```
 に手動で変更した。
 その後、起動用のTerraformをapplyしたら成功した。
