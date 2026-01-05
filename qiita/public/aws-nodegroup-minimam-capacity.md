@@ -1,16 +1,17 @@
 ---
 title: Terraformさん「最小キャパシティは希望キャパシティより大きくできません」ワイ「してるんだが？」
-private: false
 tags:
-  - Kubernetes
-  - devops
-  - SRE
   - AWS
+  - devops
+  - kubernetes
   - Terraform
-updated_at: '2026-01-05T17:40:54+09:00'
+  - SRE
+private: false
+updated_at: '2026-01-05T17:45:10+09:00'
 id: e997e1e3ff966d23fa3a
 organization_url_name: null
 slide: false
+ignorePublish: false
 ---
 # はじめに
 新人2年目SREエンジニアのデバッグ備忘録
