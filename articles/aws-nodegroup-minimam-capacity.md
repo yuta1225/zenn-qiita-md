@@ -1,8 +1,8 @@
 ---
-title: "AWSさん「最小キャパシティを希望キャパシティより大きくしろ」ワイ「してるんだが？」"
+title: "Terraformさん「最小キャパシティを希望キャパシティより大きくしろ」ワイ「してるんだが？」"
 emoji: "😭"
 type: "tech" # tech: 技術記事 / idea: アイデア
-topics: ["Kubernetes", "devops", "SRE", "AWS"]
+topics: ["Kubernetes", "devops", "SRE", "AWS", "Terraform"]
 published: true
 ---
 # はじめに
