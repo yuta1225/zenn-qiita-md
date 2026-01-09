@@ -1,15 +1,16 @@
 ---
 title: 【初心者】手戻りを発生させない仕様書・調査報告書の作り方
-private: false
 tags:
-  - 仕様書
-  - ドキュメント
   - 設計
+  - ドキュメント
+  - 仕様書
   - 要件定義
-updated_at: '2026-01-09T08:34:09.007Z'
-id: null
+private: false
+updated_at: '2026-01-09T17:34:17+09:00'
+id: d3dd0414904428e7a27b
 organization_url_name: null
 slide: false
+ignorePublish: false
 ---
 # はじめに
 新人2年目SREエンジニアの孤軍奮闘備忘録。
