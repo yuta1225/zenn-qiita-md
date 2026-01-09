@@ -3,7 +3,7 @@ title: "【初心者】手戻りを発生させない仕様書・調査報告書
 emoji: "📕"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["仕様書", "ドキュメント", "設計", "要件定義"]
-published: false
+published: true
 ---
 # はじめに
 新人2年目SREエンジニアの孤軍奮闘備忘録。
