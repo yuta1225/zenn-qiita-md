@@ -1,16 +1,17 @@
 ---
 title: 【初心者向け】EKS構築後のネットワーク疎通確認手順とコマンド解説
-private: false
 tags:
-  - Kubernetes
-  - Docker
   - AWS
   - CLI
-  - EKS
-updated_at: '2026-01-22T04:22:52.448Z'
-id: null
+  - Docker
+  - kubernetes
+  - eks
+private: false
+updated_at: '2026-01-22T13:22:59+09:00'
+id: 4f119b71b17f99af7b6c
 organization_url_name: null
 slide: false
+ignorePublish: false
 ---
 
 # はじめに：なぜこれが必要なのか？
