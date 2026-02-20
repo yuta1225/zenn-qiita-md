@@ -3,7 +3,7 @@ title: "GitHubActions hosted, self-hosted の料金体系比較表（Enterprise�
 emoji: "🐱"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["CICD", "GitHub", "GitHubActions"]
-published: false
+published: true
 ---
 GitHub Actions の課金体系は、主に「ジョブの実行時間（Minutes）」と「ストレージ使用量（Storage）」の2つの軸による従量課金モデルを採用している。
 GitHub Enterprise Cloud プラン には大規模な無料利用枠があらかじめ付帯しており、標準的な利用であれば基本料金内で運用可能。
