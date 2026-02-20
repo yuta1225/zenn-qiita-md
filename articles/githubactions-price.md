@@ -2,7 +2,7 @@
 title: "GitHubActions hosted, self-hosted の料金体系比較表（Enterprise）"
 emoji: "🐱"
 type: "tech" # tech: 技術記事 / idea: アイデア
-topics: ["CI/CD", "GitHub", "GitHubActions"]
+topics: ["CICD", "GitHub", "GitHubActions"]
 published: true
 ---
 GitHub Actions の課金体系は、主に「ジョブの実行時間（Minutes）」と「ストレージ使用量（Storage）」の2つの軸による従量課金モデルを採用している。

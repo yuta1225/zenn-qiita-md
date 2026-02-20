@@ -2,7 +2,7 @@
 title: 'GitHubActions hosted, self-hosted の料金体系比較表（Enterprise）'
 private: false
 tags:
-  - CICD
+  - CI/CD
   - GitHub
   - GitHubActions
 updated_at: '2026-02-19T08:29:22.059Z'
