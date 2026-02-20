@@ -11,7 +11,7 @@ organization_url_name: null
 slide: false
 ---
 GitHub Actions の課金体系は、主に「ジョブの実行時間（Minutes）」と「ストレージ使用量（Storage）」の2つの軸による従量課金モデルを採用しています。
-GitHub Enterprise Cloud プラン には大規模な無料利用枠があらかじめ付帯しており、標準的な利用であれば基本料金内で運用可能です。
+GitHub Enterprise Cloud プラン には大規模な無料利用枠があらかじめ付帯しており、標準的な利用であれば基本料金内で運用可能。
 
 # 結論
 よっぽどネットワークに厳しいとか実行数が多い場合でない限り、hosted-runnerにしておいた方がいい。インフラの管理がめんどくさいので。
