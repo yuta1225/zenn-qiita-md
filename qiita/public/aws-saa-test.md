@@ -1,12 +1,13 @@
 ---
 title: AWS SAA 合格体験記
-private: false
 tags:
   - AWS
-updated_at: '2026-06-16T10:31:55.764Z'
-id: null
+private: false
+updated_at: '2026-06-16T19:32:04+09:00'
+id: 1a4d13ca160980b45a34
 organization_url_name: null
 slide: false
+ignorePublish: false
 ---
 
 ## はじめに
