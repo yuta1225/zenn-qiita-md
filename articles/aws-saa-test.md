@@ -3,7 +3,7 @@ title: "AWS SAA 合格体験記"
 emoji: "👏"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["AWS"]
-published: false
+published: true
 ---
 
 ## はじめに
